@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.pan.listeners.Listener"></listener>
+        <listener class-name="com.pan.listeners.MethodInterceptor"></listener>
+        <listener class-name="com.pan.listeners.AnnotationTransformer"></listener>
+    </listeners>
+    <test thread-count="1" name="FrontEndFrameWork2ndRound" parallel="methods">
+        <classes>
+            <class name="com.pan.tests.AmazonTest"></class>
+            <class name="com.pan.tests.GoogleTest"></class>
+            <class name="com.pan.tests.OrangeHRMTest"></class>
+            <class name="com.pan.tests.KsrtcTest"></class>
+        </classes>
+    </test>
+</suite>
